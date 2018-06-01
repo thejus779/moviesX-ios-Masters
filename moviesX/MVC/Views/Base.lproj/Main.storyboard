@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MoviesX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIv-JY-3aX" customClass="UICustomLabel" customModule="moviesX" customModuleProvider="target">
-                                <rect key="frame" x="20" y="475" width="335" height="36"/>
+                                <rect key="frame" x="125" y="475.5" width="125" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" red="0.92944473029999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -54,16 +54,24 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thejus MSC-SE 19" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9f-Xf-lbc">
+                                <rect key="frame" x="20" y="554" width="335" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IdJ-4Y-dZc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9TD-uo-5a3"/>
-                            <constraint firstItem="tIv-JY-3aX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CTw-5z-yex"/>
+                            <constraint firstItem="D9f-Xf-lbc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EOm-N8-mbW"/>
                             <constraint firstItem="BTT-9c-oAY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Roa-73-ypJ"/>
+                            <constraint firstItem="tIv-JY-3aX" firstAttribute="centerX" secondItem="D9f-Xf-lbc" secondAttribute="centerX" id="STV-m9-CfT"/>
                             <constraint firstItem="IdJ-4Y-dZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UIe-LL-NY0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D9f-Xf-lbc" secondAttribute="trailing" constant="20" id="UZf-n4-rgw"/>
+                            <constraint firstItem="BTT-9c-oAY" firstAttribute="top" secondItem="D9f-Xf-lbc" secondAttribute="bottom" constant="20" id="YAI-tj-8p6"/>
+                            <constraint firstItem="D9f-Xf-lbc" firstAttribute="top" secondItem="tIv-JY-3aX" secondAttribute="bottom" constant="42.5" id="fJS-sa-Ji8"/>
                             <constraint firstItem="IdJ-4Y-dZc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fPR-mx-68g"/>
-                            <constraint firstItem="BTT-9c-oAY" firstAttribute="top" secondItem="tIv-JY-3aX" secondAttribute="bottom" constant="80" id="kam-i8-7LH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tIv-JY-3aX" secondAttribute="trailing" constant="20" id="mi3-f3-8s6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTT-9c-oAY" secondAttribute="trailing" constant="20" id="ofH-3o-PAt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BTT-9c-oAY" secondAttribute="bottom" constant="20" id="tHP-Ek-Nmm"/>
                             <constraint firstItem="IdJ-4Y-dZc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uuN-fV-Gtw"/>
@@ -198,7 +206,7 @@
                                     <constraint firstAttribute="height" constant="128" id="kOV-p8-gd2"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found, Please add a new Movie." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-aA-Nrb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Movies found, Please add a new Movie." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-aA-Nrb">
                                 <rect key="frame" x="20" y="317.5" width="335" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -978,7 +986,7 @@
                                     <constraint firstAttribute="width" constant="240" id="lla-u0-eZZ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found, Please add a new Cinema Hall." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ5-42-K33">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Cinema Halls found, Please add a new Cinema Hall." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ5-42-K33">
                                 <rect key="frame" x="20" y="317.5" width="335" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
