@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SCLAlertView
 
 class AddMovieViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -125,40 +126,40 @@ class AddMovieViewController: UIViewController,UIImagePickerControllerDelegate, 
         txtDirector.text = txtDirector.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         txtDescription.text = txtDescription.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         if ((txtName.text?.isEmpty)!) {
-            print(" name empty")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a name")
             return false
         }
         else if((txtDirector.text?.isEmpty)!){
-            print(" director name empty")
+            SCLAlertView().showError(" Error", subTitle: "Please enter Director name ")
             return false
         }
         else if((txtYear.text?.isEmpty)!){
             
-            print("yera empty")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a valid year ")
             return false
             
         }
         else if let _ = txtYear.text?.rangeOfCharacter(from: CharacterSet.letters){
-            print("year digits only")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a valid year ")
             return false
         }
         else if((txtRatings.text?.isEmpty)!){
             
-            print("rating empty")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a valid rating out of 5")
             return false
             
         }
         else if let _ = txtRatings.text?.rangeOfCharacter(from: CharacterSet.letters){
-            print("rating digits only")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a valid rating out of 5")
             return false
         }
         else if((txtDescription.text?.isEmpty)!){
-            print(" description  empty")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a description ")
             return false
         }
         else if(imgMovie.image == nil){
             
-            print(" image empty")
+            SCLAlertView().showError(" Error", subTitle: "Please upload an Image ")
             return false
         }
             

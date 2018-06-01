@@ -147,15 +147,15 @@ class MainViewController: UIViewController,UIPageViewControllerDataSource,UIPage
         let alert = UIAlertController(title: "What do you want to add?", message: "", preferredStyle: UIAlertControllerStyle.alert)
         
         // add the actions (buttons)
-        alert.addAction(UIAlertAction(title: "Add Cinema Hall", style: UIAlertActionStyle.default, handler: { action in
+        alert.addAction(UIAlertAction(title: "Add Movies", style: UIAlertActionStyle.default, handler: { action in
+            
+             self.performSegue(withIdentifier: "toMovieDetails", sender: self)
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Add Cinema Halls", style: UIAlertActionStyle.default, handler: { action in
             
             self.performSegue(withIdentifier: "toCinemaDetails", sender: self)
             
-        }))
-        alert.addAction(UIAlertAction(title: "Add Movie", style: UIAlertActionStyle.default, handler: { action in
-            
-            // do something like...
-             self.performSegue(withIdentifier: "toMovieDetails", sender: self)
             
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))

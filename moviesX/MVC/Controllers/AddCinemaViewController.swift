@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SCLAlertView
 
 class AddCinemaViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -58,6 +59,7 @@ class AddCinemaViewController: UIViewController,UIImagePickerControllerDelegate,
             goBack()
         } catch {
             let nserror = error as NSError
+
             fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
         }
     }
@@ -127,36 +129,37 @@ class AddCinemaViewController: UIViewController,UIImagePickerControllerDelegate,
         txtRating.text = txtRating.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         txtPrice.text = txtPrice.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         if ((txtName.text?.isEmpty)!) {
+            SCLAlertView().showError(" Error", subTitle: "Please enter a name")
             print(" name empty")
             return false
         }
         else if((txtLocation.text?.isEmpty)!){
-            print(" location empty")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a location")
             return false
         }
         else if((txtPrice.text?.isEmpty)!){
            
-                print("digts only price")
+                SCLAlertView().showError(" Error", subTitle: "Please enter a valid price")
                 return false
     
         }
         else if let _ = txtPrice.text?.rangeOfCharacter(from: CharacterSet.letters){
-            print("price digits only")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a valid price")
             return false
         }
         else if((txtRating.text?.isEmpty)!){
 
-                print("rating empty")
+                SCLAlertView().showError(" Error", subTitle: "Please enter a valid rating out of 5")
                 return false
         
         }
         else if let _ = txtRating.text?.rangeOfCharacter(from: CharacterSet.letters){
-            print("rating digits only")
+            SCLAlertView().showError(" Error", subTitle: "Please enter a valid rating out of 5")
             return false
         }
         else if(imgCinemaHall.image == nil){
             
-            print(" image empty")
+            SCLAlertView().showError(" Error", subTitle: "Please select an Image")
             return false
         }
         else {
