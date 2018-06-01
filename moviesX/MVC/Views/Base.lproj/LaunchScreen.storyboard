@@ -21,13 +21,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios" translatesAutoresizingMaskIntoConstraints="NO" id="UtM-RR-kye">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MoviesX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnq-Yb-Kmt">
+                                <rect key="frame" x="20" y="475" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" red="0.92944473029999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dnq-Yb-Kmt" secondAttribute="trailing" constant="20" id="4Zi-nJ-tcO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UtM-RR-kye" secondAttribute="trailing" id="8Vg-o6-2bl"/>
                             <constraint firstItem="UtM-RR-kye" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="MMr-s6-7CA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dnq-Yb-Kmt" secondAttribute="bottom" constant="156" id="X5N-jm-VXo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UtM-RR-kye" secondAttribute="bottom" id="XD0-If-1ut"/>
                             <constraint firstItem="UtM-RR-kye" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="h03-Bh-MhZ"/>
+                            <constraint firstItem="Dnq-Yb-Kmt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tJA-WN-zDw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
