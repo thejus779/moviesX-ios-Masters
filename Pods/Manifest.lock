@@ -1,0 +1,18 @@
+PODS:
+  - IQKeyboardManager (6.0.2)
+  - SCLAlertView (0.8)
+  - STRatingControl (1.1.2)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - SCLAlertView
+  - STRatingControl
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: c49d59e358aeeffaa0280aa305093c2b194d2607
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  STRatingControl: 254ee5f6dd174e3fa9d8365a08326291fd0bd950
+
+PODFILE CHECKSUM: eeaaccc49007cd6f4876980b5e5010afd94f29a3
+
+COCOAPODS: 1.4.0
